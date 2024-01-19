@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            position: relative;
+            animation: moveAnimation 2s linear infinite;
+        }
+        @keyframes moveAnimation {
+            0% {left:0}
+            50% {left: 100px;}
+            100% {left: 100px;}
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="a">Merhaba Yazılım JS eğitimine hoşgeldiniz</h1>
+    <button onclick="document.getElementById('a').innerHTML=Date()" > Buraya tıkla </button>
+    <script src="index.js"></script>
+</body>
+</html>
